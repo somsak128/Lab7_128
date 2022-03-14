@@ -38,6 +38,8 @@ dependencies:
   firebase_auth: ^3.3.8
   google_sign_in: ^5.2.4
   auth_buttons: ^2.0.4
+  fluttertoast: ^8.0.9
+  form_field_validator: ^1.1.0
 
 dev_dependencies:
   flutter_test:

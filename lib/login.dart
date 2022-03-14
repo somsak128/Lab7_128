@@ -130,21 +130,24 @@ class _LoginState extends State<Login> {
     );
   }
 
-  SizedBox registerbutton() {
-    return SizedBox(
-      width: 270,
-      child: ElevatedButton(
-          style: ButtonStyle(
-            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-              RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(32),
+  Widget registerbutton() {
+    return Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: SizedBox(
+        width: 200,
+        child: ElevatedButton(
+            style: ButtonStyle(
+              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(32),
+                ),
               ),
             ),
-          ),
-          onPressed: () {
-            registerWithEmail(_email.text, _password.text);
-          },
-          child: const Text('Rrgister')),
+            onPressed: () {
+              registerWithEmail(_email.text, _password.text);
+            },
+            child: const Text('Rrgister')),
+      ),
     );
   }
 
